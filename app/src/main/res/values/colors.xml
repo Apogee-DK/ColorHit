@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!-- Game Square Colors -->
+    <color name="redBlock">#b7000d</color>
+    <color name="yellowBlock">#c1ba00</color>
+    <color name="blueBlock">#001aa7</color>
+    <color name="greenBlock">#007616</color>
+    <color name="purpleBlock">#5a009b</color>
+
+    <integer-array name="blockColors">
+        <item>@color/redBlock</item>
+        <item>@color/yellowBlock</item>
+        <item>@color/blueBlock</item>
+        <item>@color/greenBlock</item>
+        <item>@color/purpleBlock</item>
+    </integer-array>
+
+
+
+</resources>

@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.apogee.colorhit.Game">
+
+    <LinearLayout android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <TextView android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#33b5e5"
+                    android:textSize="25sp"
+                    android:text="@string/score_content" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#33b5e5"
+            android:textSize="25sp"
+            android:text="@string/next_blocks"
+            android:textAlignment="center" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true"
+            android:layout_gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:fitsSystemWindows="true"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_disabled"
+                        android:id="@+id/imageView"
+                        android:scrollX="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_disabled"
+                        android:id="@+id/imageView2"
+                        android:scrollX="0dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/common_google_signin_btn_icon_dark_disabled"
+                        android:id="@+id/imageView3"
+                        android:scrollX="0dp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chargeBar"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

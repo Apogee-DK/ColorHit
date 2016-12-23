@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Color Hit</string>
+    <string name="play_button">Play</string>
+    <string name="exit_button">Exit</string>
+    <string name="menu_content">Color Hit</string>
+    <string name="game_content">Game</string>
+    <string name="score_content">Score</string>
+    <string name="next_blocks">Blocks</string>
+</resources>
