@@ -26,7 +26,7 @@ public class Game extends AppCompatActivity {
 
         imageview.setOnTouchListener(new View.OnTouchListener(){
 
-            Resources r = getResources();
+            Resources r = context.getResources();
             int [] blockColors = r.getIntArray(R.array.blockColors);
 
            @Override
